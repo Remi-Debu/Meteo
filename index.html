@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Météo</title>
+</head>
+
+<body>
+    <div class="a">
+        <div>
+            <i class="bi bi-three-dots menu"></i>
+        </div>
+        <div>
+            <div>
+                <p class="meteo degre"></p>
+            </div>
+            <div>
+                <p class="meteo ville"></p>
+            </div>
+        </div>
+        <div class="meteo iconeDesc">
+            <img class="icone" src="" alt="">
+            <div class="desc"></div>
+        </div>
+    </div>
+    <div class="b">
+        <div>
+            <i class="bi bi-x-lg close"></i>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="search">
+                <input id="searchBar" type="text" class="search-input" placeholder="pays..." name="">
+                <button onclick="searchBarValue()" class="search-icon">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="principal">
+            <h2>Température</h2>
+            <hr>
+            <p class="info"><span>Température</span><span class="info-droite temp"></span></p>
+            <p class="info"><span>Ressenti</span><span class="info-droite ressenti"></span></p>
+            <p class="info"><span>Maximum</span><span class="info-droite maximum"></span></p>
+            <p class="info"><span>Minimum</span><span class="info-droite minimum"></span></p>
+
+            <h2 class="h2">Vent</h2>
+            <hr>
+            <p class="info"><span>Vitesse</span><span class="info-droite v-vitesse"></span></p>
+            <p class="info"><span>Degré</span><span class="info-droite v-degre"></span></p>
+
+            <h2 class="h2">Autres</h2>
+            <hr>
+            <p class="info"><span>Humidité</span><span class="info-droite humidite"></span></p>
+            <p class="info"><span>Visibilité</span><span class="info-droite visibilite"></span></p>
+            <p class="info"><span>Pression</span><span class="info-droite pression-mer"></span></p>
+
+            <h2 class="h2">Coordonnées</h2>
+            <hr>
+            <p class="info"><span>Latitude</span><span class="info-droite latitude"></span></p>
+            <p class="info"><span>Longitude</span><span class="info-droite longitude"></span></p>
+
+            <h2 class="h2">Temps</h2>
+            <hr>
+            <p class="info"><span>Pays</span><span class="info-droite pays"></span></p>
+            <p class="info"><span>UTC</span><span class="info-droite utc"></span></p>
+            <p class="info"><span>Lever du soleil</span><span class="info-droite lever-soleil"></span></p>
+            <p class="info"><span>Coucher du soleil</span><span class="info-droite coucher-soleil"></span></p>
+            <p class="info"><span>Décalage UTC</span><span class="info-droite decalage-utc"></span></p>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

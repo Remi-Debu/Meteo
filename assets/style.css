@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    /* background-image: url("https://wallpaperaccess.com/full/3524424.jpg"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.menu {
+    display: none;
+}
+
+.a {
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 50px;
+}
+
+.a > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.b {
+    background-color: rgb(26 37 52 / 85%);
+    width: 30vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.degre {
+    font-weight: 700;
+    font-size: 10rem;
+    text-align: center;
+}
+
+.ville {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.iconeDesc {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 27.3vh;
+}
+
+.icone {
+    background-color: rgb(26 37 52);
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    width: 100px;
+    height: 100px;
+}
+
+.desc {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* INPUT  */
+.search {
+    margin-top: 30px;
+    height: 70px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 1%;
+}
+
+.search-input {
+    color: white;
+    border:0;
+    outline: 0;
+    background: none;
+    width: 0;
+    margin-top:5px;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.search .search-input {
+    padding: 0 10px;
+    width: 20vw;
+    caret-color: #536bf6;
+    font-size: 21px;
+    font-weight: 300;
+    color: black;
+    transition: width 0.4s linear;
+}
+
+.search-icon {
+    height: 50px;
+    width: 50px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(26 37 52);
+    border: none;
+    border-radius: 50%;
+}
+
+.search:hover>.search-icon {
+    background:#536bf6;
+}
+
+.principal {
+    margin-left: 50px;
+    margin-bottom: 40px;
+    overflow-y: scroll;
+}
+
+hr {
+    margin: 0 40px 35px 0;
+    opacity: 1;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-droite {
+    margin-right: 50px;
+}
+
+.h2 {
+    margin-top: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    margin-right: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff00;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #4670af; 
+}
+
+.close {
+    display: none;
+}
+
+
+/* TABLET */
+@media screen and (max-width: 1100px) {
+    body {
+        flex-direction: column-reverse;
+        /* background-image: none;
+        background-color: #3a5f76; */
+    }
+
+    .a {
+        width: 100vw;
+        height: 30vh;
+        align-items: center;
+    }
+
+    .b {
+        width: 100vw;
+        height: 70vh;
+    }
+}
+
+/* PHONE  */
+@media screen and (max-width: 750px) {
+    body {
+        flex-direction: column-reverse;
+        /* background-image: none;
+        background-color: #3a5f76; */
+    }
+
+    .a {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .a > div:nth-child(1) {
+        position: absolute;
+        top: 10px;
+        right: 50px;
+    }
+
+    .a > div:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: block;
+        font-size: 5rem;
+        cursor: pointer;
+    }
+
+    .b {
+        display: none;
+    }
+
+    .principal {
+        margin-top: 40px;
+    }
+
+    .search .search-input {
+        width: 80%;
+    }
+
+    .b > div:nth-child(1) {
+        text-align: center;
+    }
+
+    .close {
+        display: block;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+}
